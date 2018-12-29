@@ -1,0 +1,39 @@
+name: TagGame
+main: pawarenessc\TagGame\Main
+version: 4
+api: 4.0.0
+authors : [musaichi,mcshigo,PawarenessC,jggj2,ribnil,MACHI000]
+load: POSTWORLD
+description: play tag.
+commands:
+ tagui:
+  description: "逃走中の制御コマンド"
+  usage: " /tagui "
+ ts:
+  description: "逃走中"
+  usage: " /ts "
+ smi:
+  description: "はい、スマイル～"
+  usage: " /smi "
+permissions:
+ tagui:
+  default: true
+  description: "逃走中の制御コマンド"
+  children:
+   tagui.command:
+    default: true
+    description: "逃走中の制御コマンド"
+ ts:
+  default: true
+  description: "逃走中"
+  children:
+   ts.command:
+    default: true
+    description: "逃走中"
+ smi:
+  default: true
+  description: "はい、スマイル～"
+  children:
+   smi.command:
+    default: true
+    description: "はい、スマイル～"
