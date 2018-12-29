@@ -15,5 +15,3 @@ OPEN
 ### 2018.10~
 <br>Successor: PawarenessC</br>
 <br>Successor: jggj2</br>
-<br>Successor: ribnil</br>
-<br>Successor: MACHI000</br>
