@@ -196,7 +196,7 @@ $this->cogame = false;
 
 
 
-			"INFO4" => "§bはい、スマイル～はこのサーバの挨拶だね！/smiでできるよ～！", 
+			"INFO4" => "§b頑張れ", 
 
 			
 
@@ -461,12 +461,6 @@ if($this->type[$name] == 1) {
 			$name = $p->getName();
             if($this->type[$name] == 1) {
 
-                /*現在$apidの部分が$event->getBlock()->getID()になっていたこの処理はかぶっているヘルメット
-
-                がid298だったらにするから$apid(ヘルメットid)で比較する*/
-
-                //$this->getServer()->getPluginManager()->getPlugin("円")->addmoney($n, 250);
-
                 $this->system->addMoney($n, 250);
 
                 $p->sendMessage("§l[§aS§eY§6S§bT§cE§4M§f]§r§bミッションクリア！250円を獲得！！");
@@ -700,8 +694,6 @@ public function EntityDamageEvent(EntityDamageEvent $event){
 
   $player = $event->getDamager();
 
-  $t = 410;
-
   $m = $this->gametime;
 
    if($entity instanceof Player && $player instanceof Player){
@@ -849,15 +841,6 @@ return true;
   $sender->sendMessage("§4設定により参加できません");
   }
 return true;
-
-
-  case "smi";
-
-  $name = $sender->getName();
-
-  $this->getServer()->broadcastMessage("<☆".$name."☆>§bはい、スマイル～");
-       return true;
-}
 }
 
  
@@ -912,15 +895,15 @@ return true;
  case 30:
  if($ww == 1){
 
-  $this->getServer()->broadcastMessage("[§bスマイル§f]§aあわふわ§は開発者のPawarenessCのサーバーだったあわふわ逃走中のワールドだよ！シンプルな街で最後まで逃げ切ろう！");
+  $this->getServer()->broadcastMessage("シンプルな街で最後まで逃げ切ろう！");
 
   }elseif($ww == 2){
 
-  $this->getServer()->broadcastMessage("[§bスマイル§f]§c西洋§eは西洋の街並みが広がるワールド！素晴らしい街並みのワールドで逃げ切ろう！");
+  $this->getServer()->broadcastMessage("§c西洋§eは西洋の街並みが広がるワールド！素晴らしい街並みのワールドで逃げ切ろう！");
 
   }elseif($ww == 3){
 
-  $this->getServer()->broadcastMessage("[§bスマイル§f]§dイオン§eは入り組んだ施設が逃げやすくなったり逃げにくくなってしまう...逃走者はそれに対応して逃げ切ろう！");
+  $this->getServer()->broadcastMessage("§dイオン§eは入り組んだ施設が逃げやすくなったり逃げにくくなってしまう...逃走者はそれに対応して逃げ切ろう！");
 }
 break;
 
