@@ -1587,10 +1587,6 @@ switch($min){
 
         break;*/
 
-
-
-}
-
 }
 
 if($ms == 3){
