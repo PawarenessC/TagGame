@@ -842,6 +842,7 @@ return true;
   }
 return true;
 }
+	}
 
  
  public function startscheduler(){
